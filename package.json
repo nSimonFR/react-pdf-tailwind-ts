@@ -1,8 +1,8 @@
 {
-  "name": "nsimonfr-cv",
+  "name": "react-pdf-tailwind-ts",
   "version": "1.0.0",
   "author": "nSimonFR",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "src/index.tsx",
   "private": true,
   "scripts": {
