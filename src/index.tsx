@@ -27,4 +27,4 @@ const MyDocument = () => (
 );
 
 export default <MyDocument />;
-export const name = "ReactPDF";
+export const name = "PDF";
