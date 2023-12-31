@@ -1,25 +1,25 @@
-import { Document, Page, StyleSheet, Text, View } from "@react-pdf/renderer";
+import { Document, Page, Text, View } from "@react-pdf/renderer";
 import React from "react";
+import { createTw } from "react-pdf-tailwind";
 
-const styles = StyleSheet.create({
-  page: {
-    flexDirection: "row",
-    backgroundColor: "#E4E4E4",
-  },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1,
+const tw = createTw({
+  theme: {
+    fontFamily: {},
+    extend: {
+      colors: {
+        custom: "#ab47bc",
+      },
+    },
   },
 });
 
 const MyDocument = () => (
   <Document>
-    <Page size="A4" style={styles.page}>
-      <View style={styles.section}>
-        <Text>Hello !</Text>
+    <Page size="A4" style={tw("flex-row bg-[#E4E4E4]")}>
+      <View style={tw("m-10 p-10 grow")}>
+        <Text style={tw("text-custom")}>Hello !</Text>
       </View>
-      <View style={styles.section}>
+      <View style={tw("m-10 p-10 grow")}>
         <Text>World !</Text>
       </View>
     </Page>
