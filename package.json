@@ -6,7 +6,8 @@
   "main": "src/index.tsx",
   "private": true,
   "scripts": {
-    "build": "ts-node build.ts"
+    "build": "ts-node build.ts",
+    "preview": "cd preview && vite"
   },
   "dependencies": {
     "@react-pdf/renderer": "^3.1.14",
@@ -16,6 +17,8 @@
   "devDependencies": {
     "@types/node": "^20.10.6",
     "@types/react": "^18.2.46",
+    "@vitejs/plugin-react": "^4.2.1",
+    "react-dom": "^18.2.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
